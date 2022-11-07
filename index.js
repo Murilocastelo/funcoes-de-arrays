@@ -104,4 +104,16 @@ const foundFruit = frutas.find( frutas => frutas.name === "cereja")
 includes()
 ==================================*/
 //para saber se um array possui determinado valor ou objeto
-console.log([1, 2, 3].includes(2))
+const people = [
+   { id: 11, name: "Adamastor", age: 23, group: "editor" },
+   { id: 47, name: "Joana", age: 28, group: "user" },
+   { id: 85, name: "Mauricio", age: 34, group: "editor" },
+   { id: 97, name: "Claudio", age: 74, group: "admin" }
+]
+ 
+const filteredUsers = people.filter( p => p.name.includes( "au" ) ) 
+console.log( filteredUsers )
+
+/*==================================
+API
+==================================*/
